@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>国资纪语 - 廉洁警示教育资源平台</title>
+    <title>国资纪语 - 广州国资管理集团廉洁警示教育资源平台</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -25,12 +25,9 @@
                         serif: ['"Noto Serif SC"', 'serif'],
                     },
                     colors: {
-                        'paper': '#F7F7F5',   /* 宣纸白 */
-                        'ink': '#1A1A1A',     /* 纯墨 */
-                        /* 修改重点：使用 #962622 (沉稳的故宫红/深印泥色) 
-                           替代了之前的亮红，瞬间提升庄重感。
-                        */
-                        'seal': '#962622',    
+                        'paper': '#F7F7F5',   
+                        'ink': '#1A1A1A',     
+                        'seal': '#962622', /* 故宫红 */   
                     },
                     boxShadow: {
                         'glass': '0 4px 30px rgba(0, 0, 0, 0.03)',
@@ -61,9 +58,7 @@
     <!-- 手机外壳 -->
     <div class="relative w-full md:w-[414px] h-screen md:h-[896px] bg-paper md:rounded-[24px] overflow-hidden shadow-2xl border border-white/40 flex flex-col">
 
-        <!-- ============================ -->
-        <!-- ✨ 悬浮磨砂 Header -->
-        <!-- ============================ -->
+        <!-- Header -->
         <header class="absolute top-0 left-0 right-0 z-50 px-6 pt-12 pb-4 flex justify-between items-center border-b border-ink/5 bg-paper/70 backdrop-blur-xl saturate-150 transition-all duration-300">
             <div>
                 <p class="text-[9px] tracking-[0.25em] text-ink/40 uppercase mb-0.5 font-sans font-medium">Integrity Education</p>
@@ -72,7 +67,7 @@
                 </div>
             </div>
             
-            <!-- 印章 (这里也同步使用了新的深红色 #962622) -->
+            <!-- 印章 -->
             <div class="w-6 h-6 opacity-90">
                 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                     <rect width="100" height="100" rx="20" fill="#962622" />
@@ -81,38 +76,35 @@
             </div>
         </header>
 
-        <!-- ============================ -->
-        <!-- 内容滚动区域 -->
-        <!-- ============================ -->
+        <!-- 内容区域 -->
         <main class="flex-1 overflow-y-auto no-scrollbar relative z-10 bg-paper">
             
             <div class="pt-28 px-6 pb-24">
 
-                <!-- 🔴 本期重点 -->
+                <!-- ========================== -->
+                <!-- 🔴 本期重点 (最大的那个图) -->
+                <!-- ========================== -->
                 <div class="mb-10">
                     <div class="flex items-center justify-between mb-4 px-1">
                         <div class="flex items-center space-x-2">
-                            <!-- 这里的红色条也变深了 -->
                             <span class="w-1 h-3.5 bg-seal rounded-sm"></span>
-                            <h2 class="text-base font-serif font-bold text-ink/90 tracking-widest">本期 · 重点</h2>
+                            <h2 class="text-base font-serif font-bold text-ink/90 tracking-widest">本期内容</h2>
                         </div>
                         <span class="text-[9px] text-seal bg-seal/5 px-2 py-1 rounded font-medium backdrop-blur-sm border border-seal/10">最新发布</span>
                     </div>
 
-                    <!-- 卡片链接 -->
-                    <a href="https://culture.xxxx.me" class="block group zoom-group relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-card cursor-pointer bg-white transform transition-transform active:scale-[0.98]">
+                    <!-- 🔴【最新期修改处】链接 -->
+                    <a href="https://culture.sisuphos59.me" class="block group zoom-group relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-card cursor-pointer bg-white transform transition-transform active:scale-[0.98]">
                         <div class="absolute inset-0 overflow-hidden">
-                            <!-- 【请确保封面图尽量选用色调统一、不杂乱的图片】 -->
+                            <!-- 🔴【最新期修改处】封面图链接 (直接填文件名，如 cover.jpg) -->
                             <img src="https://images.unsplash.com/photo-1627389955611-70cb8f866415?q=80&w=800&auto=format&fit=crop" class="zoom-img w-full h-full object-cover" alt="封面">
                         </div>
                         
                         <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent"></div>
-                        
-                        <div class="absolute top-4 right-4 vertical-text text-white/50 font-serif text-[10px] tracking-widest border-r border-white/10 pr-2">
-                            乙巳年 · 2025
-                        </div>
+                        <div class="absolute top-4 right-4 vertical-text text-white/50 font-serif text-[10px] tracking-widest border-r border-white/10 pr-2">乙巳年 · 2025</div>
                         
                         <div class="absolute bottom-0 left-0 w-full p-6 text-white">
+                            <!-- 🔴【最新期修改处】标题和简介 -->
                             <h3 class="font-serif text-3xl font-bold mb-2 leading-tight tracking-wide text-white/95">文化 · 铸魂</h3>
                             <p class="font-sans text-xs text-white/70 leading-relaxed line-clamp-2 font-light mb-4">
                                 新时代国资系统廉洁文化建设专题。以竹喻廉，养浩然之气。
@@ -124,18 +116,21 @@
                     </a>
                 </div>
 
-                <!-- 🔵 往期典藏 -->
+                <!-- ========================== -->
+                <!-- 🔵 往期回顾 (列表区域)     -->
+                <!-- ========================== -->
                 <div class="mb-6">
                     <div class="flex items-center space-x-2 mb-4 px-1 border-b border-ink/5 pb-2">
                         <i class="fa-solid fa-book-bookmark text-ink/30 text-[10px]"></i>
-                        <h2 class="text-xs font-serif font-bold text-ink/50 tracking-widest">往期 · 典藏</h2>
+                        <h2 class="text-xs font-serif font-bold text-ink/50 tracking-widest">往期回顾</h2>
                     </div>
 
                     <div class="space-y-4">
                         
-                        <!-- 1. 中秋 -->
-                        <a href="https://moon.xxxx.me" class="flex bg-white p-3 rounded-xl border border-ink/5 shadow-sm hover:border-seal/20 hover:shadow-md transition-all duration-300 active:bg-gray-50">
+                        <!-- 🔴 第 1 期：中秋节 (这里我已经帮你填好了) -->
+                        <a href="https://moon.sisuphos59.me" class="flex bg-white p-3 rounded-xl border border-ink/5 shadow-sm hover:border-seal/20 hover:shadow-md transition-all duration-300 active:bg-gray-50">
                             <div class="w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden relative bg-gray-100">
+                                <!-- 图片 -->
                                 <img src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover" alt="中秋">
                             </div>
                             <div class="ml-4 flex flex-col justify-center flex-1">
@@ -146,30 +141,35 @@
                                 <p class="text-[10px] text-ink/50 leading-relaxed line-clamp-2 mb-2">
                                     团圆时刻的抉择模拟，通过互动提醒节日期间的廉洁风险点。
                                 </p>
-                                <!-- 这里使用了新的深红色 -->
-                                <span class="self-start text-[9px] text-seal bg-seal/5 px-1.5 py-0.5 rounded border border-seal/10">节日专题</span>
+                                <span class="self-start text-[9px] text-seal/80 bg-seal/5 px-1.5 py-0.5 rounded border border-seal/10">节日专题</span>
                             </div>
                         </a>
 
-                        <!-- 2. 预留位 (只需替换内容) -->
-                        <a href="#" class="flex bg-white/60 p-3 rounded-xl border border-ink/5 shadow-sm hover:bg-white transition-all duration-300">
+                        <!-- 🔴 第 2 期：待录入 (这里演示如何使用你的图片) -->
+                        <!-- 1. 修改 href 里的链接 -->
+                        <a href="#" class="flex bg-white p-3 rounded-xl border border-ink/5 shadow-sm hover:border-seal/20 hover:shadow-md transition-all duration-300 active:bg-gray-50">
                             <div class="w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden relative bg-gray-100">
-                                <img src="https://images.unsplash.com/photo-1516961642265-531546e84af2?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover grayscale opacity-50" alt="占位">
+                                <!-- 2. 修改 src 里的图片名。假设你传了 202511.jpg 到 GitHub，这里就填 202511.jpg -->
+                                <img src="202511.jpg" class="w-full h-full object-cover" alt="封面">
                             </div>
                             <div class="ml-4 flex flex-col justify-center flex-1">
                                 <div class="flex justify-between items-start mb-1">
-                                    <h3 class="font-serif text-base font-bold text-ink/90">待录入剧本</h3>
+                                    <!-- 3. 修改标题 -->
+                                    <h3 class="font-serif text-base font-bold text-ink/90">新剧本标题</h3>
                                     <span class="text-[9px] text-ink/20 font-serif font-bold">02</span>
                                 </div>
-                                <p class="text-[10px] text-ink/40 leading-relaxed line-clamp-2 mb-2">
-                                    此处填写剧本简介...
+                                <!-- 4. 修改简介 -->
+                                <p class="text-[10px] text-ink/50 leading-relaxed line-clamp-2 mb-2">
+                                    这里写剧本的简单介绍，两句话左右...
                                 </p>
+                                <span class="self-start text-[9px] text-seal/80 bg-seal/5 px-1.5 py-0.5 rounded border border-seal/10">专题名称</span>
                             </div>
                         </a>
 
-                        <!-- 3. 预留位 -->
+                        <!-- 🔴 第 3 期：预留位 -->
                         <a href="#" class="flex bg-white/60 p-3 rounded-xl border border-ink/5 shadow-sm hover:bg-white transition-all duration-300">
                             <div class="w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden relative bg-gray-100">
+                                <!-- 只有占位图，有了新图片直接替换 src 里的链接 -->
                                 <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover grayscale opacity-50" alt="占位">
                             </div>
                             <div class="ml-4 flex flex-col justify-center flex-1">
@@ -183,7 +183,7 @@
                             </div>
                         </a>
                         
-                        <!-- 4. 预留位 -->
+                        <!-- 🔴 第 4 期：预留位 -->
                         <a href="#" class="flex bg-white/60 p-3 rounded-xl border border-ink/5 shadow-sm hover:bg-white transition-all duration-300">
                             <div class="w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden relative bg-gray-100">
                                 <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover grayscale opacity-50" alt="占位">
@@ -199,7 +199,7 @@
                             </div>
                         </a>
 
-                        <!-- 5. 预留位 -->
+                        <!-- 🔴 第 5 期：预留位 -->
                         <a href="#" class="flex bg-white/60 p-3 rounded-xl border border-ink/5 shadow-sm hover:bg-white transition-all duration-300">
                             <div class="w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden relative bg-gray-100">
                                 <img src="https://images.unsplash.com/photo-1506784335131-e699942c8f63?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover grayscale opacity-50" alt="占位">
@@ -226,12 +226,10 @@
             </div>
         </main>
 
-        <!-- ============================ -->
-        <!-- ✨ 悬浮磨砂 Footer -->
-        <!-- ============================ -->
+        <!-- Footer -->
         <footer class="absolute bottom-0 left-0 right-0 z-50 py-3 px-4 border-t border-ink/5 bg-paper/70 backdrop-blur-xl">
             <div class="flex flex-col items-center justify-center text-center">
-                <span class="font-serif text-[10px] text-ink/70 font-bold tracking-wider mb-0.5">国资管理集团纪委 · 主办</span>
+                <span class="font-serif text-[10px] text-ink/70 font-bold tracking-wider mb-0.5">广州国资管理集团纪委 · 主办</span>
                 <span class="text-[8px] text-ink/20 font-sans scale-90">&copy; 2026 GUANGZHOU STATE-OWNED ASSETS MANAGEMENT GROUP LIMITED COMPANY</span>
             </div>
         </footer>
